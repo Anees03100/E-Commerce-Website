@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="My Cart page.css" >
+
+</head>
+
+
+
+
+
+
+
+
+
+<body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
+<header>
+    <header class="header">
+        <div class="logo">
+            <a href="main.html">
+            <img src="brandlogo.png"  ="Brand Icon" class="icon" ></a>
+            <span class="brand-name"> <b>Ali Baba</b> </span>
+        </div>
+      <nav class="icon-menu">
+  <a href="Profile page.html" class="icon-item">
+    <i class="fas fa-user"></i>
+       <img src ="logo2.png" height="25" width="25">
+    <span>Profile</span>
+   
+  </a>
+ 
+  <a href="Message page.html" class="icon-item">
+    <i class="fa-solid fa-message"></i>
+    <img src ="logo.png" height="25" width="25">
+    <span>Message</span>
+  </a>
+  <a href="My Cart page.html" class="icon-item">
+    <i class="fas fa-heart"></i>
+    <img src ="logo3.png" height="25" width="30">
+    <span>Orders</span>
+  </a>
+  <a href="My Cart page.html" class="icon-item">
+    <i class="fas fa-shopping-cart"></i>
+      <img src ="logo4.png" height="25" width="25">
+    <span>My cart</span>
+  </a>
+</nav>
+    </header>
+</header>
+
+  <main class="max-w-7xl w-full flex flex-col lg:flex-row gap-8">
+
+    <!-- Cart Items Section -->
+    <section aria-labelledby="cart-heading" class="flex-1 border border-blue-500 rounded-md p-6 bg-white shadow-sm">
+      <h1 id="cart-heading" class="text-lg font-semibold mb-6">My cart (<span id="cart-count">3</span>)</h1>
+        
+      <!-- Cart item -->
+      <article class="flex gap-4 border border-gray-200 rounded-md p-4 mb-6">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/96f3e622-7f73-426b-92c7-3ed3b2d589e7.png" alt="Blue short sleeve T-shirt folded on white background" class="w-20 h-20 rounded-md object-cover flex-shrink-0" onerror="this.style.display='none'" />
+        <div class="flex flex-col flex-grow justify-between">
+          <div>
+            <h2 class="font-semibold text-gray-900 mb-1">T-shirts with multiple colors, for men and lady</h2>
+            <p class="text-gray-500 text-sm mb-0.5"><span class="font-medium">Size:</span> medium, <span class="font-medium">Color:</span> blue, <span class="font-medium">Material:</span> Plastic</p>
+            <p class="text-gray-400 text-xs italic">Seller: Artel Market</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <button type="button" class="text-sm text-red-600 hover:text-red-800 font-medium focus:outline-none focus:underline">Remove</button>
+            <button type="button" class="ml-3 text-sm text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:underline">Save for later</button>
+            <div class="flex items-center space-x-2">
+              <label for="qty-1" class="sr-only">Quantity</label>
+              <select id="qty-1" name="qty-1" class="border border-gray-300 rounded px-2 py-1 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500" aria-label="Quantity for blue T-shirt">
+                <option value="1">Qty: 1</option>
+                <option value="2">Qty: 2</option>
+                <option value="3">Qty: 3</option>
+                <option selected value="9">Qty: 9</option>
+                <option value="10">Qty: 10</option>
+              </select>
+            </div>
+            <span class="font-semibold text-gray-900">$78.99</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cart item -->
+      <article class="flex gap-4 border border-gray-200 rounded-md p-4 mb-6">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cafa062c-93c6-485b-aba6-7e9056b79709.png" alt="Blue backpack with multiple compartments resting on white background" class="w-20 h-20 rounded-md object-cover flex-shrink-0" onerror="this.style.display='none'" />
+        <div class="flex flex-col flex-grow justify-between">
+          <div>
+            <h2 class="font-semibold text-gray-900 mb-1">T-shirts with multiple colors, for men and lady</h2>
+            <p class="text-gray-500 text-sm mb-0.5"><span class="font-medium">Size:</span> medium, <span class="font-medium">Color:</span> blue, <span class="font-medium">Material:</span> Plastic</p>
+            <p class="text-gray-400 text-xs italic">Seller: Best factory LLC</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <button type="button" class="text-sm text-red-600 hover:text-red-800 font-medium focus:outline-none focus:underline">Remove</button>
+            <button type="button" class="ml-3 text-sm text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:underline">Save for later</button>
+            <div>
+              <label for="qty-2" class="sr-only">Quantity</label>
+              <select id="qty-2" name="qty-2" class="border border-gray-300 rounded px-2 py-1 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500" aria-label="Quantity for blue backpack">
+                <option value="1">Qty: 1</option>
+                <option selected value="3">Qty: 3</option>
+                <option value="4">Qty: 4</option>
+                <option value="5">Qty: 5</option>
+              </select>
+            </div>
+            <span class="font-semibold text-gray-900">$39.00</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Cart item -->
+      <article class="flex gap-4 border border-gray-200 rounded-md p-4 mb-6">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/24195ab1-6939-43ac-9666-cf1bd7c207ee.png" alt="Table lamp with round beige shade and decorative base on white background" class="w-20 h-20 rounded-md object-cover flex-shrink-0" onerror="this.style.display='none'" />
+        <div class="flex flex-col flex-grow justify-between">
+          <div>
+            <h2 class="font-semibold text-gray-900 mb-1">T-shirts with multiple colors, for men and lady</h2>
+            <p class="text-gray-500 text-sm mb-0.5"><span class="font-medium">Size:</span> medium, <span class="font-medium">Color:</span> blue, <span class="font-medium">Material:</span> Plastic</p>
+            <p class="text-gray-400 text-xs italic">Seller: Artel Market</p>
+          </div>
+          <div class="mt-4 flex items-center justify-between">
+            <button type="button" class="text-sm text-red-600 hover:text-red-800 font-medium focus:outline-none focus:underline">Remove</button>
+            <button type="button" class="ml-3 text-sm text-blue-600 hover:text-blue-800 font-medium focus:outline-none focus:underline">Save for later</button>
+            <div>
+              <label for="qty-3" class="sr-only">Quantity</label>
+              <select id="qty-3" name="qty-3" class="border border-gray-300 rounded px-2 py-1 text-gray-700 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500" aria-label="Quantity for table lamp">
+                <option selected value="1">Qty: 1</option>
+                <option value="2">Qty: 2</option>
+              </select>
+            </div>
+            <span class="font-semibold text-gray-900">$170.50</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="flex justify-between items-center">
+        <button type="button" class="inline-flex items-center bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-1" aria-label="Back to shop">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+          Back to shop
+        </button>
+        <button type="button" class="text-sm text-gray-600 hover:text-gray-900 focus:outline-none focus:underline">Remove all</button>
+      </div>
+    </section>
+
+    <!-- Summary Section -->
+    <aside aria-labelledby="summary-heading" class="w-full max-w-sm bg-white rounded-md border border-gray-300 p-6 shadow-sm flex flex-col space-y-4">
+      <h2 id="summary-heading" class="font-semibold text-lg">Have a coupon?</h2>
+      <form id="coupon-form" class="flex gap-2">
+        <label for="coupon-code" class="sr-only">Add coupon</label>
+        <input id="coupon-code" type="text" name="coupon-code" placeholder="Add coupon" class="flex-grow border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500" />
+        <button type="submit" class="text-blue-600 font-semibold px-4 rounded-md border border-blue-600 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-600">Apply</button>
+      </form>
+
+      <dl class="text-sm space-y-1">
+        <div class="flex justify-between text-gray-700">
+          <dt>Subtotal:</dt>
+          <dd>$1403.97</dd>
+        </div>
+        <div class="flex justify-between text-red-600">
+          <dt>Discount:</dt>
+          <dd>−$60.00</dd>
+        </div>
+        <div class="flex justify-between text-green-600">
+          <dt>Tax:</dt>
+          <dd>+$14.00</dd>
+        </div>
+        <div class="flex justify-between font-semibold text-gray-900 border-t border-gray-300 pt-3 text-lg">
+          <dt>Total:</dt>
+          <dd>$1357.97</dd>
+        </div>
+      </dl>
+
+      <button type="button" class="w-full bg-green-600 text-white py-3 rounded-md font-semibold hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-1">Checkout</button>
+
+      <div aria-label="Accepted payment methods" role="img" class="flex justify-center gap-3 pt-3">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/11a2a166-4d4f-4207-86dc-2ae25d1bdfc2.png" alt="American Express logo in blue and white" class="h-6 object-contain" onerror="this.style.display='none'" />
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9c54bd2-3e15-4af2-b493-745edc3a1ed6.png" alt="Mastercard logo with two overlapping red and yellow circles" class="h-6 object-contain" onerror="this.style.display='none'" />
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4c60b4a8-a69b-48da-828b-1476c227fd37.png" alt="PayPal logo in blue text with a stylized P" class="h-6 object-contain" onerror="this.style.display='none'" />
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c867e25e-4fff-41fb-a17d-4a7f36ef7721.png" alt="Visa logo in blue and gold text" class="h-6 object-contain" onerror="this.style.display='none'" />
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6cbea0cb-4c6a-423c-ba72-a206403e7c30.png" alt="Apple Pay logo showing Apple icon and 'Pay' text in black" class="h-6 object-contain" onerror="this.style.display='none'" />
+      </div>
+    </aside>
+
+  </main>
+
+
+
+   <div class="container">
+        <h2>Saved for later</h2>
+        <div class="items">
+            <div class="item">
+                <img src="2.jpg" alt="Tablet">
+                <p class="price">$99.50</p>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+                <button class="cart-button">Move to cart</button>
+            </div>
+            <div class="item">
+                <img src="1.jpg" alt="Phone">
+                <p class="price">$99.50</p>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+                <button class="cart-button">Move to cart</button>
+            </div>
+            <div class="item">
+                <img src="watch.jpg" alt="Watch">
+                <p class="price">$99.50</p>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+                <button class="cart-button">Move to cart</button>
+            </div>
+            <div class="item">
+                <img src="laptop.jpg" alt="Laptop">
+                <p class="price">$99.50</p>
+                <p>GoPro HERO6 4K Action Camera - Black</p>
+                <button class="cart-button">Move to cart</button>
+            </div>
+        </div>
+    </div>
+
+ <!--                        Shop now block                                -->
+ <div class="bodo">
+ <div class="banner">
+        <div class="banner-content">
+            <h2><b>Super discount on more than 100 USD</b></h2>
+            <p>Have you ever finally just write dummy info</p>
+        </div>
+        <a class="shop-button" href="#">Shop now</a>
+    </div>
+    </div>
+
+
+ 
+  <!--                          Footer block                            -->
+
+   <footer>
+        <div class="brand-section">
+            <h1>  <a href="" class="logo">
+      <i class="fas fa-shopping-bag"></i>
+      <span>Ali Baba</span>
+    </a></h1>
+            <p>Best information about the company</p>
+        </div>
+        <div class="footer-logo">
+          <img src="facebook.png" width="20" height="20">
+
+          <img src="twitter.png" width="20" height="20">
+           <img src="linked in.png" width="20" height="20" >
+           <img src="instagram.png" width="20" height="20">
+           <img src="youtube.png" width="25" height="20">
+
+        </div>
+        <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Find store</li>
+                <li>Categories</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Partnership</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Find store</li>
+                <li>Categories</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+                <li>Help Center</li>
+                <li>Money Refund</li>
+                <li>Shipping</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>For users</h3>
+            <ul>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Settings</li>
+                <li>My Orders</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column app-section">
+            <h3>Get app</h3>
+            <ul>
+                <li><a href=""><img src="appstore.png"></a>
+                    <ul>
+                        <li><a href=""><img src="google play.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Ecommerce.</p>
+          <details class="dropdown">
+                <summary>English</summary>
+                <div class="dropdown-menu">
+                  <select name="icon-menu" id=""></select>
+                     <option value="urdu">urdu</option>
+    <option value="punjabi">punjabi</option>
+    <option value="hindi">hindi</option>
+    <option value="pashto">pashto</option>
+                </div>
+            </details>
+        </div>
+    </footer>
+  
+
+
+</body>
+</html>
+

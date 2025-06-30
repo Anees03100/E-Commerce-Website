@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Overview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="detail.css">
+  
+</head>
+<body>
+<!--                            Header                                   -->
+
+
+
+  <header>
+  
+    <header class="header">
+   
+    <a href="" class="logo">
+      <i class="fas fa-shopping-bag"></i>
+      <span>Ali Baba</span>
+    </a>
+
+    <form class="search-bar">
+      <input type="text" placeholder="Search">
+      <select>
+        <option>All category</option>
+        <option>Beauty Products</option>
+        <option>Clothes</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+
+    
+    <nav class="icon-menu">
+  <a href="Profile page.html" class="icon-item">
+    <i class="fas fa-user"></i>
+       <img src ="logo2.png" height="25" width="25">
+    <span>Profile</span>
+   
+  </a>
+ 
+  <a href="Message page.html" class="icon-item">
+    <i class="fa-solid fa-message"></i>
+    <img src ="logo.png" height="25" width="25">
+    <span>Message</span>
+  </a>
+  <a href="My Cart page.html" class="icon-item">
+    <i class="fas fa-heart"></i>
+    <img src ="logo3.png" height="25" width="30">
+    <span>Orders</span>
+  </a>
+  <a href="My Cart page.html" class="icon-item">
+    <i class="fas fa-shopping-cart"></i>
+      <img src ="logo4.png" height="25" width="25">
+    <span>My cart</span>
+  </a>
+</nav>
+
+  </header>
+
+    <!-- navigation bar -->
+  <div class="top-nav">
+    <!-- Left Navigation -->
+    <div class="nav-left">
+    <div class="nav-item"><a href="main.html" style="text-decoration-line: none;"><font color="black">Home</font></a></div>
+
+    <div class="nav-item"><i>☰</i> All category <div class="dropdown-content">
+    <a href="listview.html">Mobiles</a>
+    <a href="#">Clothes and wear</a>
+    <a href="#">Home Interiors</a>
+    <a href="#">Sports and outdoor</a>
+  </div></div>
+      <div class="nav-item">Hot offers</div>
+      <div class="nav-item">Gift boxes</div>
+      <div class="nav-item">Projects</div>
+      <div class="nav-item">Menu item</div>
+     <div class="dropdown">
+  <button class="dropbtn">Help</button>
+  <div class="dropdown-content">
+    <a href="#">Contact Us</a>
+    <a href="#">FAQ'S</a>
+    
+  </div>
+</div>
+    </div>
+
+    <!-- Right Navigation -->
+    <div class="nav-right">
+      <div class="nav-item dropdown">English, USD
+        
+        
+      </div>
+      <div class="nav-item dropdown">
+        
+        Ship to
+          <img src="https://flagcdn.com/w40/de.png" alt="Germany Flag" class="flag-icon">
+      
+      </div>
+    </div>
+  </div>
+    <nav class="breadcrumb">
+      <a href="main.html" style="text-decoration: none;"> <font color="black">Home</font></a> > Clothing > Men's wear > Summer clothing
+    </nav>
+  </header>
+
+
+<!--                            product detail block                                   -->
+
+
+  <div class="container">
+    <div class="images">
+      <img id="main-image" src="1.jpg" alt="Product" />
+      <div class="thumbnails">
+        <img src="2.jpg" alt="thumb1" onclick="changeImage(this)" />
+        <img src="3.jpg" alt="thumb2" onclick="changeImage(this)" />
+        <img src="4.jpg" alt="thumb3" onclick="changeImage(this)" />
+        <img src="headphones.jpg" alt="thumb4" onclick="changeImage(this)" />
+      </div>
+    </div>
+    <div class="product-info">
+      <p class="status">In stock</p>
+      <h2>Premium Smartphone – 6.5" HD+ Display | 5000mAh Battery | 48MP Camera | 128GB Storage</h2>
+      <div class="ratings">
+        <span>⭐ 9.3</span>
+        <span>32 reviews</span>
+        <span>154 sold</span>
+      </div>
+      <div class="price-range">
+        <div class="price-box">
+          <strong>$98.00</strong><br />50-100 pcs
+        </div>
+        <div class="price-box">
+          <strong>$90.00</strong><br />100-700 pcs
+        </div>
+        <div class="price-box">
+          <strong>$78.00</strong><br />700+ pcs
+        </div>
+      </div>
+      <div class="details">
+        <p><strong>Price:</strong> Negotiable</p>
+        <p><strong>Type:</strong> Budget Phone</p>
+        <p><strong>Material:</strong> AMOLED/ IPS LCD / Gorilla Glass Victus protection</p>
+        <p><strong>Design:</strong> Modern Slim (Bezel-less, punch-hole camera)</p>
+        <p><strong>Customization:</strong> Pre-installed themes, OS skins (e.g., MIUI, OneUI)</p>
+        <p><strong>Protection:</strong> Glass (Gorilla Glass) / Matte Plastic / Vegan Leather</p>
+        <p><strong>Warranty:</strong> 1 years full warranty</p>
+      </div>
+    </div>
+    <div class="seller-box">
+        
+      <img src="r.png" width="50" height="50" style="float: left; margin-right: 10px;"><h4>Supplier</h4>
+      <p><strong>Guanjoi Trading LLC</strong></p><hr>
+      <p><img src="germany.png" width="20" height="10"> Germany, Berlin</p>
+      <p>✔️ Verified Seller</p>
+      <p>🚚 Worldwide shipping</p>
+   <div class="button-group">
+  <button>Send inquiry</button>
+  <button>Seller's profile</button>
+  
+</div>
+      
+    </div>
+  </div>
+
+  <script>
+    function changeImage(img) {
+      document.getElementById('main-image').src = img.src;
+    }
+  </script>
+
+ <!--                        description block                                -->
+
+
+ <div class="main-container">
+        <div class="content-section">
+            <h1>Description</h1>
+            
+         
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            
+            <table>
+                <tr>
+                    <th>Model</th>
+                    <td>#9786867</td>
+                </tr>
+                <tr>
+                    <th>Style</th>
+                    <td>Classic-style</td>
+                </tr>
+                <tr>
+                    <th>Certificate</th>
+                    <td>ISO-898921212</td>
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <td>34mm x 450mm x 19mm</td>
+                </tr>
+                <tr>
+                    <th>Memory</th>
+                    <td>36GB RAM</td>
+                </tr>
+            </table>
+            <div class="lii">
+            <ul>
+                <li>Some great feature name here</li>
+                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                <li>Duis aute irure dolor in reprehenderit</li>
+                <li>Some great feature name here</li>
+            </ul>
+            </div>
+        </div>
+        
+        <div class="recommendations-section">
+            <h2>You may like</h2>
+            
+            <div class="recommendations">
+                <div class="product-card">
+                    <img src="overcoat.jpg" width="70" height="70" style="float: left; margin-right: 10px;">
+                    <div class="product-title">Men Bisexes Sets</div>
+                    <div class="product-desc">Elegant Format</div>
+                    <div class="product-price">$700 - $98.50</div>
+                </div>
+                
+                <div class="product-card">
+<img src="shirt.jpg" width="70" height="70" style="float: left; margin-right: 10px;">
+
+                    <div class="product-title">Men Shirt Sleeve</div>
+                    <div class="product-desc">Pelo Contrast</div>
+                    <div class="product-price">$700 - $98.50</div>
+                </div>
+                
+                <div class="product-card">
+    <img src="watch.jpg" width="70" height="70" style="float: left; margin-right: 10px;">
+
+                    <div class="product-title">Apple Watch Series</div>
+                    <div class="product-desc">Space Drop</div>
+                    <div class="product-price">$700 - $98.50</div>
+                </div>
+                
+                <div class="product-card">
+<img src="blue bag.jpg" width="70" height="70" style="float: left; margin-right: 10px;">
+
+                    <div class="product-title">Blue Bag</div>
+                    <div class="product-desc">School Stuff</div>
+                    <div class="product-price">$700 - $98.50</div>
+                </div>
+                
+                <div class="product-card">
+<img src="light blue shirt.jpg" width="70" height="70" style="float: left; margin-right: 10px;">
+
+                    <div class="product-title">New Summer Men's</div>
+                    <div class="product-desc">castro T-Shirts</div>
+                    <div class="product-price">$700 - $98.50</div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!--                        recommended item block                                -->
+ <section class="related-products-containerr" aria-label="Related products">
+    <h2 class="section-titler">Related products</h2>
+    <div class="products-listr">
+      <div class="product-cardr" tabindex="0" aria-label="Wallet - Xiaomi Redmi 8 Original">
+        <img
+          src="wallet.jpg"
+          alt="Blue rectangular wallet, smooth leather texture, closed"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Blue rectangular wallet</p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+      <div class="product-cardr" tabindex="0" aria-label="Smartwatch - Xiaomi Redmi 8 Original">
+        <img
+          src="watch.jpg"
+          alt="Modern smartwatch with square face and gray strap, angle view"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Modern smartwatch</p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+      <div class="product-cardr" tabindex="0" aria-label="Headphones - Xiaomi Redmi 8 Original">
+        <img
+          src="headphones.jpg"
+          alt="Over-ear headphones with silver and gray cushions, modern design"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Over-ear headphones</p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+      <div class="product-cardr" tabindex="0" aria-label="Denim shorts - Xiaomi Redmi 8 Original">
+        <img
+          src="jeans short.jpg"
+          alt="Blue denim shorts viewed from front, casual wear"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Blue denim shorts </p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+      <div class="product-cardr" tabindex="0" aria-label="Black kettle - Xiaomi Redmi 8 Original">
+        <img
+          src="mug.jpg"
+          alt="Sleek black electric kettle with handle and spout, modern style"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Sleek black electric kettle</p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+      <div class="product-cardr" tabindex="0" aria-label="Magazine rack - Xiaomi Redmi 8 Original">
+        <img
+          src="holder.jpg"
+          alt="Brown leather magazine rack with gold frame holding several magazines"
+          class="product-imager"
+          onerror="this.style.display='none'"
+        />
+        <p class="product-namer">Brown leather magazine rack</p>
+        <p class="product-pricer">$32.00–$40.00</p>
+      </div>
+    </div>
+  </section>
+ <!--                        Shop now block                                -->
+ <div class="banner">
+        <div class="banner-content">
+            <h2>Super discount on more than 100 USD</h2>
+            <p>Have you ever finally just write dummy info</p>
+        </div>
+        <a class="shop-button" href="#">Shop now</a>
+    </div>
+
+
+ <!--                        NewsLetter block                                -->
+
+<div class="bodyy">
+  <div class="newsletter-container">
+        <div class="newsletter-title">Subscribe to our newsletter</div>
+        <div class="newsletter-description">Get daily news on upcoming offers from many suppliers all over the world</div>
+        <form class="subscribe-form">
+            <input type="email" class="email-input" placeholder="Enter your email address" required>
+            <button type="submit" class="subscribe-button"><b>Subscribe</b></button>
+        </form>
+    </div>
+    </div>
+
+    
+
+    
+
+
+
+
+
+
+
+  <!--                          Footer block                            -->
+
+   <footer>
+        <div class="brand-section">
+            <h1>  <a href="" class="logo">
+      <i class="fas fa-shopping-bag"></i>
+      <span>Ali Baba</span>
+    </a></h1>
+            <p>Best information about the company</p>
+        </div>
+        <div class="footer-logo">
+          <img src="facebook.png" width="30" height="30">
+
+          <img src="twitter.png" width="30" height="30">
+           <img src="linked in.png" width="25" height="25" >
+           <img src="instagram.png" width="28" height="28">
+           <img src="youtube.png" width="40" height="30">
+
+        </div>
+        <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Find store</li>
+                <li>Categories</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Partnership</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Find store</li>
+                <li>Categories</li>
+                <li>Blogs</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Information</h3>
+            <ul>
+                <li>Help Center</li>
+                <li>Money Refund</li>
+                <li>Shipping</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>For users</h3>
+            <ul>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Settings</li>
+                <li>My Orders</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column app-section">
+            <h3>Get app</h3>
+            <ul>
+                <li><a href=""><img src="appstore.png"></a>
+                    <ul>
+                        <li><a href=""><img src="google play.png"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Ecommerce.</p>
+          <details class="dropdown">
+                <summary>English</summary>
+                <div class="dropdown-menu">
+                  <select name="icon-menu" id=""></select>
+                     <option value="urdu">urdu</option>
+    <option value="punjabi">punjabi</option>
+    <option value="hindi">hindi</option>
+    <option value="pashto">pashto</option>
+                </div>
+            </details>
+        </div>
+    </footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
